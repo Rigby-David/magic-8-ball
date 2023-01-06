@@ -6,14 +6,17 @@ const questionButton = document.getElementById('question-button');
 const answerOutput = document.getElementById('answer-output');
 const askAgainButton = document.getElementById('ask-again-button');
 
-console.log('askAgainButton', askAgainButton);
 /* State */
 let answers = ['Yes', 'No', 'Maybe', 'Try again', 'Decidedly so', 'Hahaha'];
-let randomAnswer = answers[Math.floor(Math.random() * answers.length)];
 /* Events */
 questionButton.addEventListener('click', () => {
+    let randomAnswer = answers[Math.floor(Math.random() * answers.length)];
     answerOutput.textContent = randomAnswer;
     questionInput.value = '';
+});
+
+askAgainButton.addEventListener('click', () => {
+    answerOutput.textContent = '';
 });
 /* Display Functions */
 
