@@ -48,4 +48,21 @@ main {
     width: 200px;
     border: 1px solid black;
     border-radius: 100px;
+    background-color: black;
+}
+
+.ball h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.answer-output {
+    background-color: white;
+    border-radius: 10px;
 }

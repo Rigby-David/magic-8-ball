@@ -1,7 +1,13 @@
 /* Imports */
 
 /* Get DOM Elements */
+const questionInput = document.getElementById('question-input');
+const questionButton = document.getElementById('question-button');
+const answerOutput = document.getElementById('answer-output');
 
+console.log('questionInput', questionInput);
+console.log('questionButton', questionButton);
+console.log('answerOutput', answerOutput);
 /* State */
 
 /* Events */
