@@ -6,10 +6,11 @@ const questionButton = document.getElementById('question-button');
 const answerOutput = document.getElementById('answer-output');
 
 /* State */
-const answers = ['Yes', 'No', 'Maybe', 'Try again', 'Decidedly so', 'Hahaha'];
+let answers = ['Yes', 'No', 'Maybe', 'Try again', 'Decidedly so', 'Hahaha'];
 /* Events */
+let randomAnswer = answers[Math.floor(Math.random() * answers.length)];
 questionButton.addEventListener('click', () => {
-    answerOutput.textContent = answers[0];
+    answerOutput.textContent = randomAnswer;
     questionInput.value = '';
 });
 /* Display Functions */
