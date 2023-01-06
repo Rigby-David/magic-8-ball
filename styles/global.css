@@ -33,3 +33,17 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.answer {
+    display: flex;
+    justify-content: center;
+}
+
+.ball {
+    display: flex;
+    
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
